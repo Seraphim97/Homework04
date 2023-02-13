@@ -13,11 +13,13 @@ public class Client {
     public Client() {
 
     }
-    public String sayHello () {
-    return "Tere";
 
-}
-public double balanceDifference ( double firstClientBalance, double secondClientBalance) {
+    public String sayHello() {
+        return "Tere";
+
+    }
+
+    public double balanceDifference(double firstClientBalance, double secondClientBalance) {
         return firstClientBalance - secondClientBalance;
     }
 }
