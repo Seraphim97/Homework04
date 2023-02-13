@@ -9,9 +9,10 @@ public class Figure {
 
 
     public Figure(int height, int width, int lenght) {
-        this.height = 5;
-        this.width = 3;
-        this.lenght = 4;
+        this.height = height;
+        this.width = width;
+        this.lenght = lenght;
+
 
     }
 
@@ -21,19 +22,19 @@ public class Figure {
     }
 
     public int giveMeFive( ) {
-        int a = 5;
-        int b = 3;
-        int c = 4;
+        int a = 1;
+        int b = 2;
+        int c = 3;
         int x = a * b * c;
         int result = x;
         return result;
     }
     public void showSurface() {
-        int a = 2;
-        int b = 1;
-        int h = 6;
+        int a = lenght;
+        int b = width;
+        int h = height;
         int surface;
-        surface = 2 * (a * b + a * h + b * h);
+        surface = 2 * (this.lenght  * this.width + this.width * this.height + this.width * this.height);
         System.out.println(surface);
     }
 }
