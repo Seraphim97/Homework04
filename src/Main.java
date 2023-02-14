@@ -3,12 +3,14 @@ public class Main {
 
 public static void main(String[] args) {
         System.out.println("Hello world!");
-        Figure figure = new Figure();
-        figure.giveMeFive();
-        System.out.println(figure.giveMeFive());
-        figure.showSurface();
         Client client = new Client();
         client.sayHello();
+        Figure figureOne = new Figure(1, 2,3);
+        System.out.println(figureOne.calcVolume());
+        Figure figureTwo = new Figure( 2,3,4);
+        System.out.println(figureTwo.calcVolume());
+
+
 
 
 
