@@ -16,8 +16,8 @@ public class Figure {
 
     }
 
-    public int calcVolume(int height, int width, int lenght) {
-        int result = height * width * lenght;
+    public int calcVolume() {
+        int result = this.height * this.width * this.lenght;
         return result;
     }
 
