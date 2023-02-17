@@ -1,14 +1,14 @@
 public class Figure {
 
-    double height;
-    double width;
-    double lenght;
+    int height;
+    int width;
+    int lenght;
 
     public Figure() {
     }
 
 
-    public Figure(double height, double width, double lenght) {
+    public Figure(int height, int width, int lenght) {
         this.height = height;
         this.width = width;
         this.lenght = lenght;
@@ -16,8 +16,8 @@ public class Figure {
 
     }
 
-    public double calcVolume() {
-        double result = height * width * lenght;
+    public int calcVolume(int height, int width, int lenght) {
+        int result = height * width * lenght;
         return result;
     }
 
@@ -30,9 +30,6 @@ public class Figure {
         return result;
     }
     public void showSurface() {
-        double a = lenght;
-        double b = width;
-        double h = height;
         int surface;
         surface = (int) (2 * (this.lenght  * this.width + this.width * this.height + this.width * this.height));
         System.out.println(surface);

@@ -6,9 +6,11 @@ public static void main(String[] args) {
         Client client = new Client();
         client.sayHello();
         Figure figureOne = new Figure(1, 2,3);
-        System.out.println(figureOne.calcVolume());
+        System.out.println(figureOne.calcVolume(1,2,3));
         Figure figureTwo = new Figure( 2,3,4);
-        System.out.println(figureTwo.calcVolume());
+        System.out.println(figureTwo.calcVolume(1,2,3));
+
+
 
 
 
